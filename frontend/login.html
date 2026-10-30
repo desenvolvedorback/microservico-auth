@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tela de Login</h1>
+    <h2>Digite suas informações para efetuar o login.</h2>
+    <div class="card">
+        <div class="card-body">
+            <div id="statusMensagem" role="alert" style="display: none;"></div>
+            <form id="formLogin">
+                <div class="formCadastro">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ex: marcos.vinicius@gmail.com">
+                </div>
+                <div class="formCadastro">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Ex: ********">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+     <card class="rodape">
+        <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+    </card>
+
+    <footer id="final" style="margin-top: 490px">
+        <p>© 2026 Davi Leonardo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="auth.js"></script>
+
+</html>
